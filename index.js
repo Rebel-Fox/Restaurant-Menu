@@ -28,11 +28,12 @@ detailsForm.addEventListener('submit', function(e){
     orderSummaryItems.length = 0
     render()
     toggleModal()
-    document.getElementById("container").innerHTML += `
-    <div class="after-modal" id="after-modal">
+    const afterModal = document.getElementById("after-modal")
+    afterModal.classList.toggle("hidden")
+    afterModal.innerHTML = `
+    <div class="after-modal-inner">
         <p>Thanks,${detailsFormData.get("name")}! Your order is on the way!</p>
     </div>`
-    
 })
 
 

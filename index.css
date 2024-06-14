@@ -203,7 +203,7 @@ input{
 }
 
 /*after-modal*/
-.after-modal{
+.after-modal-inner{
     background-color: #ECFDF5;
     color: #065F46;
     height: 120px;
@@ -211,7 +211,7 @@ input{
     margin-top: 20px;
 }
 
-.after-modal p{
+.after-modal-inner p{
     margin:auto;
     font-size: 20px;
 }
