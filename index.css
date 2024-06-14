@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    font-weight: 600;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+/*typography*/
+h1{
+    margin-top:0;
+    margin-bottom: 2px;
+}
+
+.restro-description{
+    margin-top: 0;
+}
+
+/*buttons*/
+button{
+    cursor: pointer;
+}
+
+.increase-btn{
+    font-size: 50px;
+    text-align: center;
+    line-height:0.9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: auto 0 auto auto;
+    background-color: white;
+    font-weight: 100;
+    color:rgb(83, 73, 73);
+}
+
+.remove-btn{
+    color:gray;
+    background-color: white;
+    border: none;
+}
+
+.complete-order-btn{
+    display: block;
+    width: 100%;
+    background-color: #16DB99;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    
+}
+
+
+
+/*utility*/
+.hidden{
+    display: none;
+}
+
+.flex-tray{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*layout*/
+.container{
+    box-sizing: border-box;
+    width: 600px;
+    margin:0 auto;
+    padding:45px;
+}
+
+.header{
+    height: 167px;
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+section{
+    border-bottom: 1px solid gray;
+}
+
+
+
+.item-icon{
+    font-size: 80px;
+    
+}
+
+.item-description{
+    margin-left: 5px;
+}
+
+.item-title{
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.item-ingredients{
+    margin-top: 7px;
+    margin-bottom: 11px;
+    color: gray;
+    font-weight: 400;
+}
+
+.item-price{
+    margin-top: 0;
+}
+
+
+/*order-summary*/
+
+.order-summary{
+    text-align: center;
+}
+
+.order-item{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.order-item-price{
+    margin:auto 0 auto auto;
+}
+
+.bottom-top{
+    border-top: 3px solid black;
+}
+
+.total-price-row{
+    font-size: 20px;
+}
+
+.total-price{
+    margin: auto 0 auto auto;
+}
+
+/*modal*/
+.modal{
+    background-color: whitesmoke;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 524px;
+    height: 490px;
+    text-align: center;
+}
+
+.close-modal-btn-container{
+    text-align: right;
+    padding:5px 5px 0 0 ;
+}
+
+.close-modal-btn{
+    font-size: 25px;
+    border: none;
+    background-color:inherit;
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus{
+   background-color:red;
+   color:white;
+}
+
+.modal-inner{
+    padding:25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+input{
+    padding:15px;
+    font-size: 20px;
+}
+
+.pay-btn{
+    padding:15px;
+    font-size: 25px;
+    color:white;
+    background-color: #16DB99;
+    border:none;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+/*after-modal*/
+.after-modal{
+    background-color: #ECFDF5;
+    color: #065F46;
+    height: 120px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.after-modal p{
+    margin:auto;
+    font-size: 20px;
+}

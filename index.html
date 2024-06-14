@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header container">
+            <h1>Jimmy's Diner</h1>
+            <p class="restro-description">The best burgers and pizzas in town</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="container"></div>
+        <script src="index.js" type="module"></script>
+
+    </main>
+
+    <div class="modal hidden" id="modal">
+        <div class="close-modal-btn-container">
+            <button class="close-modal-btn" id="close-modal-btn">X</button>
+        </div>
+        <div class="modal-inner">
+            <h2>Enter card details</h2>
+            <form class="details-form" id="details-form">
+                <input required type="text" placeholder="Enter your name" id="name" name="name" aria-label="Name"
+                    pattern="[a-zA-Z ]+">
+
+                <input required type="text" placeholder="Enter card number" id="card-number" name="card-number"
+                    aria-label="Card number" pattern="[0-9]{16}">
+
+                <input required type="number" placeholder="Enter CVV" id="cvv" name="cvv" aria-label="Card CVV" min=100
+                    max="999">
+
+                <button type="submit" id="pay-btn" class="pay-btn">Pay</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
